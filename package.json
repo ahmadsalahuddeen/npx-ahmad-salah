@@ -6,12 +6,17 @@
   "scripts": {
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "commit": "git-cz"
   },
   "bin": {
     "ahmad-salah": "./index.js"
   },
-  "keywords": ["ahmad salahuddeen","salahcodes", "ahmad-salah"],
+  "keywords": [
+    "ahmad salahuddeen",
+    "salahcodes",
+    "ahmad-salah"
+  ],
   "author": "",
   "license": "ISC",
   "description": "cli portfolio for ahmad salahuddeen",
@@ -27,6 +32,12 @@
     "url": "https://github.com/ahmadsalahuddeen/npx-ahmad-salah.git"
   },
   "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
     "semantic-release": "^24.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
